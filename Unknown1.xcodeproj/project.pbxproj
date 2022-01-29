@@ -13,6 +13,15 @@
 		C09410BF27A5555200FF3707 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09410BE27A5555200FF3707 /* Preview Assets.xcassets */; };
 		C09410C627A5759A00FF3707 /* RotationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09410C527A5759A00FF3707 /* RotationModifier.swift */; };
 		C09410C827A5771700FF3707 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09410C727A5771700FF3707 /* SearchTextField.swift */; };
+		C09410CA27A5841E00FF3707 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09410C927A5841E00FF3707 /* VisualEffectView.swift */; };
+		C09410CC27A58C3900FF3707 /* TabCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09410CB27A58C3900FF3707 /* TabCase.swift */; };
+		C09410CE27A58D3D00FF3707 /* WordsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09410CD27A58D3D00FF3707 /* WordsListView.swift */; };
+		C09410D027A58D4C00FF3707 /* IdiomsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09410CF27A58D4C00FF3707 /* IdiomsListView.swift */; };
+		C09410D227A5935300FF3707 /* GamesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09410D127A5935200FF3707 /* GamesListView.swift */; };
+		C09410D427A595CA00FF3707 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09410D327A595CA00FF3707 /* DetailsView.swift */; };
+		C09410D627A59C7100FF3707 /* StaticButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09410D527A59C7100FF3707 /* StaticButtonStyle.swift */; };
+		C09410D827A59CA500FF3707 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09410D727A59CA500FF3707 /* View+Extensions.swift */; };
+		C09410DA27A59D0C00FF3707 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09410D927A59D0C00FF3707 /* UINavigationController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +32,15 @@
 		C09410BE27A5555200FF3707 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C09410C527A5759A00FF3707 /* RotationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationModifier.swift; sourceTree = "<group>"; };
 		C09410C727A5771700FF3707 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		C09410C927A5841E00FF3707 /* VisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		C09410CB27A58C3900FF3707 /* TabCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCase.swift; sourceTree = "<group>"; };
+		C09410CD27A58D3D00FF3707 /* WordsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListView.swift; sourceTree = "<group>"; };
+		C09410CF27A58D4C00FF3707 /* IdiomsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdiomsListView.swift; sourceTree = "<group>"; };
+		C09410D127A5935200FF3707 /* GamesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListView.swift; sourceTree = "<group>"; };
+		C09410D327A595CA00FF3707 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		C09410D527A59C7100FF3707 /* StaticButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticButtonStyle.swift; sourceTree = "<group>"; };
+		C09410D727A59CA500FF3707 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		C09410D927A59D0C00FF3707 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +75,17 @@
 			children = (
 				C09410B727A5555100FF3707 /* Unknown1App.swift */,
 				C09410B927A5555100FF3707 /* ContentView.swift */,
+				C09410CD27A58D3D00FF3707 /* WordsListView.swift */,
+				C09410D327A595CA00FF3707 /* DetailsView.swift */,
+				C09410CF27A58D4C00FF3707 /* IdiomsListView.swift */,
+				C09410D127A5935200FF3707 /* GamesListView.swift */,
+				C09410CB27A58C3900FF3707 /* TabCase.swift */,
 				C09410C527A5759A00FF3707 /* RotationModifier.swift */,
 				C09410C727A5771700FF3707 /* SearchTextField.swift */,
+				C09410C927A5841E00FF3707 /* VisualEffectView.swift */,
+				C09410D527A59C7100FF3707 /* StaticButtonStyle.swift */,
+				C09410D727A59CA500FF3707 /* View+Extensions.swift */,
+				C09410D927A59D0C00FF3707 /* UINavigationController+Extensions.swift */,
 				C09410BB27A5555200FF3707 /* Assets.xcassets */,
 				C09410BD27A5555200FF3707 /* Preview Content */,
 			);
@@ -143,9 +170,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C09410DA27A59D0C00FF3707 /* UINavigationController+Extensions.swift in Sources */,
+				C09410CA27A5841E00FF3707 /* VisualEffectView.swift in Sources */,
+				C09410D427A595CA00FF3707 /* DetailsView.swift in Sources */,
 				C09410BA27A5555100FF3707 /* ContentView.swift in Sources */,
 				C09410B827A5555100FF3707 /* Unknown1App.swift in Sources */,
+				C09410D227A5935300FF3707 /* GamesListView.swift in Sources */,
+				C09410D027A58D4C00FF3707 /* IdiomsListView.swift in Sources */,
 				C09410C627A5759A00FF3707 /* RotationModifier.swift in Sources */,
+				C09410CC27A58C3900FF3707 /* TabCase.swift in Sources */,
+				C09410CE27A58D3D00FF3707 /* WordsListView.swift in Sources */,
+				C09410D627A59C7100FF3707 /* StaticButtonStyle.swift in Sources */,
+				C09410D827A59CA500FF3707 /* View+Extensions.swift in Sources */,
 				C09410C827A5771700FF3707 /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +351,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

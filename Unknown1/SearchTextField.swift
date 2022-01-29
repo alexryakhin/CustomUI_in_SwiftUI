@@ -31,7 +31,7 @@ struct SearchTextField: View {
                 }
             }
             .padding(.horizontal, 10)
-            .padding(.vertical, 5)
+            .padding(.vertical, 7.5)
             .background(Color("SearchBackground"))
             .cornerRadius(8)
 
@@ -45,9 +45,10 @@ struct SearchTextField: View {
                 } label: {
                     Text("Cancel")
                 }
+                .transition(AnyTransition.move(edge: .trailing))
             }
         }
-        .padding()
+        .padding(10)
     }
 }
 
@@ -57,8 +58,3 @@ struct SearchTextField_Previews: PreviewProvider {
     }
 }
 
-func hideKeyboard() {
-    UIApplication.shared.sendAction(
-        #selector(UIResponder.resignFirstResponder),
-        to: nil, from: nil, for: nil)
-}
