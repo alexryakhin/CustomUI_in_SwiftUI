@@ -34,10 +34,3 @@ enum TabCase: CaseIterable {
         }
     }
 }
-
-struct TabItem: Identifiable {
-    var id: Int
-    var name: String
-    var image: String
-}
-
