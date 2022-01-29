@@ -10,7 +10,7 @@ import SwiftUI
 struct SearchTextField: View {
     var title: String
     @Binding var searchText: String
-    @State private var isEditing = false
+    @Binding var isSearching: Bool
     var body: some View {
         HStack {
             HStack {
@@ -18,8 +18,7 @@ struct SearchTextField: View {
                     .foregroundColor(Color("SearchSecondary"))
                 TextField(title, text: $searchText) { isEditing in
                     withAnimation {
-                        NotificationCenter.default.post(name: Notification.Name.isSearching, object: nil, userInfo: ["isSearching": isEditing])
-                        self.isEditing = isEditing
+                        self.isSearching = isEditing
                     }
                 }
                 if !searchText.isEmpty {
@@ -36,12 +35,11 @@ struct SearchTextField: View {
             .background(Color("SearchBackground"))
             .cornerRadius(8)
 
-            if isEditing {
+            if isSearching {
                 Button {
                     withAnimation {
                         searchText = ""
-                        isEditing = false
-                        NotificationCenter.default.post(name: Notification.Name.isSearching, object: nil, userInfo: ["isSearching": isEditing])
+                        isSearching = false
                         hideKeyboard()
                     }
                 } label: {
@@ -55,7 +53,7 @@ struct SearchTextField: View {
 
 struct SearchTextField_Previews: PreviewProvider {
     static var previews: some View {
-        SearchTextField(title: "Search", searchText: .constant(""))
+        SearchTextField(title: "Search", searchText: .constant(""), isSearching: .constant(false))
     }
 }
 
@@ -63,8 +61,4 @@ func hideKeyboard() {
     UIApplication.shared.sendAction(
         #selector(UIResponder.resignFirstResponder),
         to: nil, from: nil, for: nil)
-}
-
-extension Notification.Name {
-    static var isSearching = Self("com.publisher.combine.isSearching")
 }

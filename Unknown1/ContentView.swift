@@ -29,13 +29,6 @@ struct ContentView: View {
             .navigationBarHidden(true)
             selectItemIpad
         }
-        .onReceive(NotificationCenter.default.publisher(for: Notification.Name.isSearching, object: nil)) { output in
-            if let userInfo = output.userInfo, let isSearching = userInfo["isSearching"] as? Bool {
-                withAnimation {
-                    self.isSearching = isSearching
-                }
-            }
-        }
     }
     
     private var background: some View {
@@ -50,7 +43,7 @@ struct ContentView: View {
                     .font(.system(.headline, design: .rounded))
                     .padding(.top)
             }
-            SearchTextField(title: "Search", searchText: $searchText)
+            SearchTextField(title: "Search", searchText: $searchText, isSearching: $isSearching)
             
         }
         .frame(maxWidth: .infinity)
