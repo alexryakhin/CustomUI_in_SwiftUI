@@ -27,14 +27,16 @@ struct DetailsView: View {
     private var navBar: some View {
         VStack(spacing: 0) {
             HStack {
-                Button {
-                    presentationMode.wrappedValue.dismiss()
-                } label: {
-                    Image(systemName: "chevron.backward.circle.fill")
-                        .font(.system(size: 30))
-                        .foregroundColor(.accentColor)
+                if UIDevice.current.userInterfaceIdiom != .pad {
+                    Button {
+                        presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Image(systemName: "chevron.backward.circle.fill")
+                            .font(.system(size: 30))
+                            .foregroundColor(.accentColor)
+                    }
+                    .buttonStyle(PlainButtonStyle())
                 }
-                .buttonStyle(PlainButtonStyle())
                 Spacer()
             }
             .padding(.horizontal)
@@ -47,7 +49,7 @@ struct DetailsView: View {
             }
         }
         .frame(maxWidth: .infinity)
-//        .background(VisualEffectView(effect: UIBlurEffect(style: .systemChromeMaterial)).ignoresSafeArea())
+        //        .background(VisualEffectView(effect: UIBlurEffect(style: .systemChromeMaterial)).ignoresSafeArea())
     }
     
     private var content: some View {
