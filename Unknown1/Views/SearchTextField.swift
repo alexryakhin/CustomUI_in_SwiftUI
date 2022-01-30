@@ -18,7 +18,7 @@ struct SearchTextField: View {
                     .foregroundColor(Color("SearchSecondary"))
                 TextField(title, text: $searchText) { isEditing in
                     withAnimation {
-                        self.isSearching = isEditing
+                        self.isSearching = !searchText.isEmpty || isEditing
                     }
                 }
                 if !searchText.isEmpty {
